@@ -1,5 +1,16 @@
 #include <stdio.h>
-void maior_numero (int x, int y);
+void maior_numero(int x, int y){//definindo função
+	
+	if (x>y){
+		printf("o numero %d é maior", x);
+	}
+	else if (y>x){
+		printf("o numero %d é maior", y);
+	}
+	else{
+		printf("o valores são iguais");
+	}
+}
 
 int main (void){
 	int n1;
@@ -11,15 +22,4 @@ int main (void){
 	maior_numero(n1, n2);
 	return 0;
 }
-void maior_numero(int n1, int n2){//definindo função
-	
-	if (n1>n2){
-		printf("o numero %d é maior", n1);
-	}
-	else if (n2>n1){
-		printf("o numero %d é maior", n2);
-	}
-	else{
-		printf("o valores são iguais");
-	}
-}
+
