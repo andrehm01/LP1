@@ -3,7 +3,6 @@ int soma_quadratica (int x){
 	int soma=0;
 	int i=1;
 	while (i<=x){
-	
 		soma = soma + (i*i);
 		i+=1;
 	}
