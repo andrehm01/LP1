@@ -27,7 +27,7 @@ void busca(){
 }
 void cadastro(int x){
 	int i,vit;
-	int emp;
+	int emp, de;
 	int aux;
 	char time[15];
 	for(i=0;i<x;i++){
@@ -38,6 +38,8 @@ void cadastro(int x){
 			scanf("%d",&vit);
 			printf("informe o numero de empates: ");
 			scanf("%d",&emp);
+			printf("informe o numero de derrotas: ");
+			scanf("%d",&de);
 			campeonato[i].pontos = vit*3 +emp;
 			
 			printf("\n");
