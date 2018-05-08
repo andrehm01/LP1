@@ -10,6 +10,7 @@ int soma_de_numeros(int x){
 }
 int main () {
 	int n;
+	printf("enquanto o numero digitado for diferente de 0\n");
 	printf ("Digite um número: ");
 	scanf ("%d", &n);
 	n = soma_de_numeros(n);
