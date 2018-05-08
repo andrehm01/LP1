@@ -1,5 +1,6 @@
+
 #include <stdio.h>
-float conversor_real(float x){//definindo função
+float conversor_real(float x){//definindo funçao
 	x= x*3.17;
 	return x;	
 }
@@ -9,7 +10,8 @@ int main (void){
 	printf ("informe o valor de celular em dollar: ");
 	scanf ("%f", &valor);
 	valor = conversor_real(valor);
-	printf("\n"" o valor em reais:%f",valor);
+	printf("o valor do celular em reais:%.2f",valor);
+	printf("\n");
 		if (valor<1000){
 		printf("bom negocio!!!");
 	}else{
@@ -18,4 +20,3 @@ int main (void){
 	
 	return 0;
 }
-
