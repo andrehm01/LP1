@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int eh_primo(int n){
+int eh_primo(int n){// função que verifica se é primo
     int i;
     int div =0;
     for (i=1;i<=n;i++){
@@ -16,11 +16,11 @@ int eh_primo(int n){
         }
 
 }
-int todos_os_primos(n){
+int todos_os_primos(n){ // funcão que escreve todos os primos entre 1 e n
     int j;
     printf("os primos entre 1 e %d s\306o: ",n, "\n");
     for (j=1;j<=n;j++){
-        if (eh_primo(j)==1){
+        if (eh_primo(j)==1){ // chama a função eh_primo para fazer a verificação
             printf ("\n%d",j);
         }
 
