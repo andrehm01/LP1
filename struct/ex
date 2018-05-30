@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+struct estoque{
+ char produto[20];
+ int  preco_custo;
+ int  preco_venda
+};
+
+
+void preenche(struct estoque* p){
+
+  printf("informe o produto que desesja cadastrar no estoque:");
+  scanf("%s",(*p).produto);
+  printf("informe o valor de custo do produto:");
+  scanf("%d",&(*p).preco_custo);
+  printf("informe o valor de venda da produto");
+  scanf("%d",&(*p).preco_venda);
+}
+
+int main(void){
+
+struct estoque produto;
+
+   preenche(&produto);
+   printf("produto: %s - custo: %d - preco para venda: %d \n",produto.produto,produto.preco_custo,produto.preco_venda);
+
+return 0;
+
+}
