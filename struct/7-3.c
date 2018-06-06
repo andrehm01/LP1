@@ -4,7 +4,7 @@ struct Posicao{
     int y;
 };
 struct Personagem{
-    char imagem;
+    int imagem;
     int pont;
     struct Posicao pos;
 };
@@ -17,7 +17,7 @@ void posicao(struct Posicao *p){
 
 void preenche(struct Personagem *p){
     printf("informe o caracter para imagem do personagem:\n ");
-    scanf("%c",&((*p).imagem));
+    scanf("%d",&((*p).imagem));
     posicao(& (*p).pos);
 
 
@@ -28,7 +28,7 @@ int main(){
     for (i=0;i<10;i++){
 
         preenche(&heroi[i]);
-        printf("\nPersonagem: %c - posicao  (%d,%d)\n", heroi[i].imagem, heroi[i].pos.x, heroi[i].pos.y);
+        printf("\nPersonagem: %d - posicao  (%d,%d)\n", heroi[i].imagem, heroi[i].pos.x, heroi[i].pos.y);
     }
 
 }
