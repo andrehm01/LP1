@@ -23,10 +23,11 @@ int main(){
     int i;
     struct Posicao vet[10];
     struct Posicao Mponto;
-    Mponto = Mpontuacao(&vet);
+    
     for (i=0;i<10;i++){
 
         preenche (&vet[i]);
+	Mponto = Mpontuacao(&vet);
         printf("vetor%d posicao (%d,%d)\n", i+1,vet[i].x, vet[i].y);
     }
     printf("maior distancia %d,%d",Mponto.x, Mponto.y);
