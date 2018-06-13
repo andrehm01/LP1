@@ -24,7 +24,7 @@ void preenche(struct Personagem *p){
 }
 int main(){
     int i=0;
-    struct Personagem heroi[i];
+    struct Personagem heroi[10];
     for (i=0;i<10;i++){
 
         preenche(&heroi[i]);
