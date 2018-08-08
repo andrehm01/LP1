@@ -6,7 +6,7 @@ int main(void){
     int i,tam;
     FILE *fp;// cria ponteiro para aquivo
     printf("digite o texto ");
-    scanf("%s,palavra");
+    scanf("%s",palavra);
     tam=strlen(palavra);
     fp= fopen("arq01.txt","w");
     for (i=0;i<tam;i++);{
