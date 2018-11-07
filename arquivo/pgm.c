@@ -1,3 +1,4 @@
+// ler uma imagem .pgm e imprimir na tela 
 #include <stdio.h>
 #include <string.h>
 
